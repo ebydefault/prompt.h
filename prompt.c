@@ -32,7 +32,7 @@ static int  intbetween(char* msg, int min, int max);
 static bool binopt(char* msg, char opt_true, char opt_false);
 static bool yesno(char* msg);
 
-// and should be called like a method of prompt, e.g. prompt.yesno(...)
+// and should be called as a member of prompt, e.g. prompt.yesno(...)
 struct Prompts prompt = {
   intrange,
   intbetween,
