@@ -12,8 +12,8 @@ int main(void)
   else printf("\n  You're not afraid of saying no.\n");
 
   printf("\n  You chosed %d\n",
-      prompt.intrange( "\nChoose a number from 12 to 21 ...\n"
-                        "  Try me by choosing 11, or 22, or even a letter: ", 12, 21));
+      prompt.intrange("\nChoose a number from 12 to 21 ...\n"
+                      "  Try me by choosing 11, or 22, or even a letter: ", 12, 21));
   
   printf("\n  You chosed %d\n",
       prompt.intbetween("\nChoose a number between 55 and 66 ...\n"
