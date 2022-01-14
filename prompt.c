@@ -50,6 +50,7 @@ int intrange(char* msg, int min, int max)
   do
   {
     printf("%s", msg);
+    fflush(stdout); // flush buffer before calling scanf().
     if ((ret = scanf("%d", &num)) < 0) exit (EXIT_FAILURE); // handle EOF
     while (getchar() != '\n');  // clear the input buffer
     if (num >= min && num <= max) return num;
@@ -75,6 +76,7 @@ bool binopt(char* msg, char opt_true, char opt_false)
   do
   {
     printf("%s", msg);
+    fflush(stdout); // flush buffer before calling scanf().
     if ((ret = scanf("%c", &opt)) < 0) exit (EXIT_FAILURE); // handle EOF
     while (getchar() != '\n');  // clear the input buffer
     opt       = toupper(opt);
